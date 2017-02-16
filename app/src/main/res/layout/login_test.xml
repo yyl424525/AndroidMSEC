@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ >
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:hint="输入账户"
+                android:paddingRight="60dp"
+                android:maxLength="20"
+                android:paddingLeft="55dp" >
+            </EditText>
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="21dp"
+
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/login_user"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/contry_sn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="+62"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <!--<Button-->
+                <!--android:id="@+id/bt_username_clear"-->
+                <!--android:layout_width="23dp"-->
+                <!--android:layout_height="23dp"-->
+                <!--android:background="@drawable/login_clear"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="invisible"-->
+                <!--/>-->
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/usercode_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+            android:inputType="textPassword"
+                android:hint="输入密码"
+            android:paddingRight="60dp"
+            android:maxLength="20"
+            android:paddingLeft="55dp" >
+        </EditText>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/login_lock" />
+        <!--<Button-->
+            <!--android:id="@+id/bt_pwd_eye"-->
+            <!--android:layout_width="23dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:background="@drawable/login_eye"-->
+            <!--android:layout_gravity="right|center_vertical"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/bt_pwd_clear"-->
+            <!--android:layout_width="23dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:background="@drawable/login_clear"-->
+            <!--android:visibility="invisible"-->
+            <!--android:layout_gravity="right|center_vertical"-->
+            <!--android:layout_marginRight="33dp"-->
+            <!--/>-->
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/usercode_layout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_blue_selector"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="登录" />
+
+
+        <LinearLayout
+            android:layout_below="@id/login"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/login_error"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="忘记密码"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+
+                android:id="@+id/btn_skip"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/login"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical"
+
+                android:text="随便看看"
+                android:textSize="16sp"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:text="注册"
+                android:textSize="16sp"
+
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+<!--android:id="@+id/remember_layout000"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_marginBottom="1dp"-->
+<!--android:layout_marginLeft="20dp"-->
+<!--android:layout_marginRight="20dp" >-->
+<!--<Button-->
+    <!--android:id="@+id/registfer"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#00000000"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="AnyLife,Make the world a better place."-->
+    <!--android:textSize="16sp"-->
+    <!--android:visibility="visible" />-->
+<!--</RelativeLayout>-->
+
+
+    </RelativeLayout>

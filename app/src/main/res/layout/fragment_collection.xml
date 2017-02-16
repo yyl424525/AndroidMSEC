@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <!--导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00B8EE">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:text="我的收藏"
+
+            android:textSize="45px"
+            android:textColor="#fff" />
+
+
+
+    </RelativeLayout>
+
+    <com.example.yyl.msec.utils.ReFlashListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.yyl.msec.utils.ReFlashListView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

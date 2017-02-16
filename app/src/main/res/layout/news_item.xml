@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_img" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/img"
+        android:text="流光溢彩下的经典传承"
+        android:textColor="#313131"
+        android:textSize="18sp" />
+    <!--避免Item不可点击-->
+    <!--<CheckBox-->
+
+        <!--android:focusable="false"-->
+        <!--android:id="@+id/checkbox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/title"-->
+        <!--android:layout_alignRight="@+id/title"-->
+        <!--android:checked="false" />-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_alignParentBottom="true"
+        android:text="发布时间:"
+        android:textColor="#909090"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text"
+        android:layout_alignParentBottom="true"
+        android:text="2013-02-12"
+        android:textColor="#909090"
+        android:textSize="14sp" />
+</RelativeLayout>

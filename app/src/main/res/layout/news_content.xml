@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical">
+    <LinearLayout
+        android:background="#00B8EE"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/newscon_image_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:textSize="50px"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:scrollbars="none"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.example.yyl.msec.copy.CustomWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.example.yyl.msec.copy.CustomWebView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 发送者昵称、发送时间、发送内容 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearlayout_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="评论区"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:background="#00B8EE"
+                android:layout_height="1dp" />
+            <!-- 评论列表 -->
+            <com.example.yyl.msec.utils.NoScrollListView
+                android:id="@+id/commentList"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:divider="#00000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="上一条"
+                android:textSize="40px"
+                android:visibility="gone"
+                android:layout_height="50dp" />
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/btn_next"
+                android:text="下一条"
+                android:layout_weight="1"
+                android:textSize="40px"
+                android:visibility="gone"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+<!-- 输入框、留言按钮 -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCCCCC"
+    android:id="@+id/commentLinear"
+    android:visibility="gone"
+    android:orientation="horizontal">
+    <!-- 输入框 -->
+
+    <EditText
+        android:id="@+id/commentEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:maxLength="100"
+        android:minHeight="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textMultiLine"
+        android:gravity="left"
+        android:maxLines="6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"/>
+    <!-- 留言按钮 -->
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:text="发送"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>
+    <LinearLayout
+        android:background="#00B8EE"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/newscon_img_share"
+                android:src="@drawable/share_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/newscon_img_comment"
+                android:src="@drawable/comment_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/newscon_img_love"
+                android:src="@drawable/main_love_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/newscon_img_admire"
+                android:src="@drawable/zan_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':library', ':FlycoAnimation_Lib', ':FlycoDialog_Lib'

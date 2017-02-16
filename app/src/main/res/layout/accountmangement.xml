@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <!--导航栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FF00B8EE"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/image_register_back"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginRight="40dp"
+            android:text="账户管理"
+            android:textSize="45px"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+    <!--切换账号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_me"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:src="@drawable/man5"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/account_change_linearlayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="-20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="切换账号"
+
+                android:layout_weight="2"
+                android:layout_marginRight="-20dp"
+                android:layout_gravity="center"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/to"
+                android:layout_weight="2"
+
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/account_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/account_blue"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="账户:"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:id="@+id/text_account"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/rename"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sex_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/sex_blue"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="性别:"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/text_sex"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="5"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/rename"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mail_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/mail_blue"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="邮箱:"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/text_mail"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="5"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/rename"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img_me_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/img_me"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="头像"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="5"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/rename"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:background="#ddff0000"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="退出登录" />
+
+</LinearLayout>

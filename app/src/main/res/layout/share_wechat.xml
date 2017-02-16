@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:text="分享到朋友圈"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/img_qq"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+        <ImageView
+            android:src="@drawable/qq"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="分享到QQ"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img_wechat"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+        <ImageView
+
+            android:src="@drawable/qq"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="分享到微信好友"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/img_friends"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+        <ImageView
+
+            android:src="@drawable/qq"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="分享到微信朋友圈"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

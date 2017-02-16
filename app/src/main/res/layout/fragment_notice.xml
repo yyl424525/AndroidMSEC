@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <SearchView
+        android:id="@+id/search_view"
+        android:queryHint="输入要搜索的内容"
+        android:layout_width="match_parent"
+        android:iconifiedByDefault="false"
+        android:inputType="textFilter"
+        android:layout_height="50dp"></SearchView>
+    <com.example.yyl.msec.utils.ReFlashListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.yyl.msec.utils.ReFlashListView>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    package="com.example.yyl.msec">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/msec_logo"
+        tools:replace="android:icon"
+
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="1105755529" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity"></activity>
+        <activity android:name=".activity.ContentActivity"></activity>
+        <activity android:name=".activity.AccountActivity"></activity>
+        <service android:name=".service.SaveUsersService"></service>
+
+        <service android:name=".service.SaveNewsService"></service>
+        <service android:name=".service.SaveNoticeService"></service>
+
+        <service android:name=".service.SaveCollectionsService"></service>
+        <service android:name=".service.SaveZanService"></service>
+        <service android:name=".service.SaveCommentsService"></service>
+        <activity android:name=".Test.ShareDialogActivity"
+            android:theme="@style/MyDialogStyle"
+            ></activity>
+        <activity android:name=".activity.FeedbackActivity"></activity>
+        <activity android:name=".activity.AboutActivity"></activity>
+
+    </application>
+
+</manifest>

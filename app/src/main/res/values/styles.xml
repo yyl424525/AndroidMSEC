@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Android123" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/main_home_normal</item>
+    </style>
+
+    <!--android:style/Theme.Translucent.NoTitleBar.Fullscreen-->
+    <style name="MyDialogStyle">
+             <item name="android:windowBackground">@android:color/white</item>
+                <item name="android:windowFrame">@null</item>
+               <item name="android:windowNoTitle">true</item>
+               <item name="android:windowIsFloating">true</item>
+              <item name="android:windowIsTranslucent">true</item>
+                 <item name="android:windowContentOverlay">@null</item>
+                 <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+                <item name="android:backgroundDimEnabled">true</item>
+           </style>
+
+
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+    <style name="AnimationRightFade">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+
+    <style name="AnimationBottomFade">
+        <item name="android:windowEnterAnimation">@anim/in_bottomtotop</item>
+        <item name="android:windowExitAnimation">@anim/out_toptobottom</item>
+    </style>
+
+    <style name="DayTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+        <item name="colorAccent">#00BCD4</item>
+        <item name="colorControlNormal">#00BCD4</item>
+
+        <item name="titleStyle">@style/DayTitleStyle</item>
+        <item name="contentStyle">@style/DayContentStyle</item>
+        <item name="buttonBg">#2196F3</item>
+        <item name="buttonTextColor">#ffffff</item>
+        <item name="checkTextColor">#2196F3</item>
+        <item name="switchTextColor">#2196F3</item>
+    </style>
+
+    <style name="DayTitleStyle">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="DayContentStyle">
+        <item name="android:textColor">#9C27B0</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:maxLines">10</item>
+    </style>
+
+</resources>
+
+
